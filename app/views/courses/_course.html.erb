@@ -1,0 +1,14 @@
+<div id="<%= dom_id course %>">
+  <p>
+    <strong>Nazwa:</strong>
+    <%= course.nazwa %>
+  </p>
+
+  <p>
+    Grupy:
+    <% course.groups.each do |group| %>
+      <%= group.nazwa %><br>
+    <% end %>
+  </p>
+
+</div>
